@@ -1,4 +1,9 @@
-A = {x for x in range(21)}
-B = {i for i in range(21) if i % 2 == 0}
-C = (A - B)
-print(C)
+A = set(range(21))
+
+B = set(range(0, 21, 2))
+
+C = A - B
+
+print("集合A:", A)
+print("集合B:", B)
+print("集合C:", C)
